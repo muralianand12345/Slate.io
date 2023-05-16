@@ -4,8 +4,7 @@ from string import punctuation
 from nltk.stem.snowball import SnowballStemmer
 import nltk
 
-f1 = open('article.txt')
-text1 = f1.read()
+
 
 class TextSummarizer:
     stemmer = SnowballStemmer("english")
@@ -14,16 +13,19 @@ class TextSummarizer:
     sentences = ""
     def tokenize_sentence(self):
         words = word_tokenize(self.text)
-        print(words)
         return words;
 
-    def input_text(self):   
+    def input_text(self):
         while True:
-            self.text = text1
-            if(len(self.text)>10):
-                break;
-            else:
-                print("Please input the text as length at least 10")
+            with open('article.txt', 'r', encoding='utf-8') as file:
+                text1 = file.read()
+                if len(text1) > 10:
+                    self.text = text1
+                    break
+                else:
+                    print("Please input the text with a length of at least 10 characters")
+
+
 
      
     def cal_freq(self,words):
@@ -48,8 +50,6 @@ class TextSummarizer:
                         sentenceValue[sentence] += index
                     else:
                         sentenceValue[sentence] = index
-                        
-        print(sentenceValue)
         return sentenceValue;
 
     def sumAvg(self,sentenceValue):
