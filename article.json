@@ -1,0 +1,19 @@
+{
+    "summary_points": [
+        "But if input A was closed, the current would flow through the solenoid, creating a magnetic field that pulls the switch inside it closed, and this connects the output light bulb to power and disconnects the carry light bulb",
+        "If neither switch A or B is closed, so adding 0 + 0, then no current flows through the circuit and no light bulb would light up",
+        "But if you closed both A and B simultaneously, then there is no current flowing through the solenoid but there would be a current flowing from the battery connected to A, which is connected to the carry light bulb",
+        "But if the plate were slightly negative relative to the filament, then it would repel electrons and no current would flow",
+        "- [Derek] The modern era of electronics began with the light bulb but not in the way you might think",
+        "The output light bulb should turn on when either A or B, but not both, are closed, so this is known as an exclusive OR gate",
+        "In 1904, John Ambrose Fleming patented a device that was very similar to Edison's light bulb, but with one important addition: a second electrode in the bulb",
+        "It was the first practical vacuum tube device and the model for all vacuum tubes that would dominate the industry for the next half century",
+        "Eight plus eight is 16 in binary, which would be 1 0 0 0 0",
+        "Early light bulbs consisted of a carbon filament sealed inside a glass bulb with a vacuum inside",
+        "- It's magical, so if you wanna do like say, 8 plus, that would be 4 so 8 + 8, I think, right?",
+        "Two years later, they built the model I, which had more than 400 relays and could add two eight digit numbers together in a 10th of a second",
+        "Sure, it's very simple math, but you could connect a bunch of these half adders together and build more and more complicated circuits that could do more complex math, which is exactly what Stibitz and his colleagues at Bell Labs did",
+        "Well, the heated filament emits not only light and heat but also electrons",
+        "The device was called a thermionic diode and it was used initially for detecting radio signals but it could also convert alternating current to direct current"
+    ]
+}
