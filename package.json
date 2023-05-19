@@ -1,15 +1,16 @@
 {
   "name": "slate.io",
   "version": "1.0.0",
-  "description": "A stubid project",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "PlAnB",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0",
-    "cheerio": "^1.0.0-rc.12"
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.3"
   }
 }

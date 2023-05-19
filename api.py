@@ -38,7 +38,7 @@ class TextSummarizer:
                         else:
                             sentence_scores[sentence] += word_freq[word]
         sorted_sentences = sorted(sentence_scores.items(), key=lambda x: x[1], reverse=True)
-        summary = [sentence.split('.')[0].replace('\n', ' ') for sentence, score in sorted_sentences[:15]]
+        summary = [sentence.split('.')[0].replace('\n', ' ').replace('\u201c', ' ').replace('\u201d', ' ') for sentence, score in sorted_sentences[:20]]
         return summary
 
 @app.route('/api/subtitles/<video_id>', methods=['GET'])
