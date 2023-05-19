@@ -24,6 +24,12 @@ const config = require('./config.json');
 client.discord = Discord;
 client.config = config;
 
+var exec = require("child_process").exec;
+var child = exec(`python api.py`);
+child.stdout.on('data', async function (data) {
+    console.log(data)
+});
+
 const events = fs.readdirSync('./events').filter(async (file) => file.endsWith('.js'));
 for (let file of events) {
     const event = require(`./events/${file}`);
